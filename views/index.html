@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/index.css" rel="stylesheet"/>
+    <title>SPSK CASE</title>
+</head>
+<body>
+
+<div class="menu">
+
+<% if (user) { %>
+<div class="lewy-kontener">
+        <a href="/" class="element-kontenera nazwa-strony">SKRZYNKI</a>
+    </div>
+    <div class="prawy-kontener">
+       <a href="/logout" class="element-kontenera"> <%= user.username %> </a>
+        <a href="/logout" class="element-kontenera"> wyloguj</a>
+    </div>
+
+<% } else { %>
+    
+   
+   <div class="lewy-kontener">
+        <a href="/" class="element-kontenera nazwa-strony">SKRZYNKI</a>
+    </div>
+    <div class="prawy-kontener">
+        <a href="users/new" class="element-kontenera">Utwórz konto</a>
+        <a href="login" class="element-kontenera">Zaloguj się</a>
+    </div>
+    <% } %>
+
+</div>
+<% if (user) { %>
+<div class="glowny-kontener">
+    <div class="postac-lewo"><img src="assets/postac-tt.png"></div>
+    <div class="postac-prawo"><img src="assets/postac-ct.png"></div>
+    <div class="kontener-skrzynek">
+        <img src="assets/baner%20-%20gotowe.png" class="logo">
+        <div class="flex-skrzynki">
+            <img src="assets/skrzynia-mc.png" class="element-flex-skrzynki">
+            <img src="assets/SKRZYNIA-CS-GOTOWA.png" class="element-flex-skrzynki">
+            <img src="assets/skrzynia-roblox.png" class="element-flex-skrzynki">
+            <img src="assets/skrzynia-mc.png" class="element-flex-skrzynki">
+            <img src="assets/skrzynia brawl.png" class="element-flex-skrzynki no-margin-bottom">
+            <img src="assets/skrzynia-roblox.png" class="element-flex-skrzynki no-margin-bottom">
+            <img src="assets/skrzynia-mc.png" class="element-flex-skrzynki no-margin-bottom">
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+
+<% } else { %>
+<div class="glowny-kontener">
+    <div class="postac-lewo"><img src="assets/postac-tt.png"></div>
+    <div class="postac-prawo"><img src="assets/postac-ct.png"></div>
+    <div class="kontener-skrzynek">
+        <img src="assets/baner%20-%20gotowe.png" class="logo">
+        <div class="flex-skrzynki">
+            <img src="assets/skrzynia-mc.png" class="element-flex-skrzynki">
+            <img src="assets/SKRZYNIA-CS-GOTOWA.png" class="element-flex-skrzynki">
+            <img src="assets/skrzynia-roblox.png" class="element-flex-skrzynki">
+            <img src="assets/skrzynia-mc.png" class="element-flex-skrzynki">
+            <img src="assets/skrzynia brawl.png" class="element-flex-skrzynki no-margin-bottom">
+            <img src="assets/skrzynia-roblox.png" class="element-flex-skrzynki no-margin-bottom">
+            <img src="assets/skrzynia-mc.png" class="element-flex-skrzynki no-margin-bottom">
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+<% } %>
+
+</body>
+</html>
+
+    
